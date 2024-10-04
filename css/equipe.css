@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+
+nav{
+    background-color: #4d4d4d;
+    padding: 13px;
+    text-align: center;
+    display: flex;
+    background-image: linear-gradient(to bottom, transparent,rgba(0, 0, 0, 0.842));
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo{
+    flex: 15%;
+    margin: auto;
+    margin-left: 5%;
+    text-align: center;
+}
+
+nav strong{
+    background-color: rgba(18, 87, 18, 0.384);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(219, 219, 219);
+    font-weight: 400;
+}
+
+.contato{
+    flex: 10%;
+   /* border: 1px solid green;*/
+    margin: auto;
+    margin-right: 5%;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+.menu{
+    flex: 50%;
+    margin: auto;
+   /* border: 1px solid purple;*/
+}
+
+.menu a{
+    padding: 3%;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #dedede;
+}
+
+.menu a:hover{
+    color: rgba(0, 112, 0, 0.699);
+}
+
+.contato a{
+    color: #ffffffd3;
+    font-size: 1.2em;
+    text-decoration: none;
+}
