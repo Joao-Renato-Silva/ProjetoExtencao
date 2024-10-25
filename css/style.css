@@ -183,7 +183,7 @@ h3{
 
 footer h1{
     text-align: center;
-    padding: 20px;
+    padding: 20px 0px 0px 0px;
     font-size: 2.5em;
     font-weight: 400;
 }
@@ -205,32 +205,36 @@ footer h2{
     font-weight: 400px;
     font-size: 1.3em;
     display: flex;
-    padding-top: 45px;
+    padding-top: 35px;
 
 }
 
-@media(min-width: 300px){
+@media(min-width: 425px){
     article{
         height: 1600px;
     }
     
     .card{
-        display: inline;
+        display: block;
     }
 
     article img{
-        width: 300px;
+        width: 400px;
         height: 500px;
     }
 
     .card p {
-        height: 70%;
-
+        height: 60%;
     }
 
     span{
-        display: block;
+        display: none;
     } 
+
+    .card p:hover span {
+        transform: rotate(0);
+        display: none;
+      }
 
     .logo{
         margin-left: 0%;
@@ -256,15 +260,32 @@ footer h2{
 
     Footer{
         display: block;
-        height: 800px;
+        height: 900px;
     }
+
+    footer h1{
+        padding: 20px;
+        }
 
     .contatos{
         margin-right: 10px;
     }
 
+    .contatos a{
+        padding-left: 20px;
+    }
+
     .local h1{
         padding-top: 60px;
+    }
+
+    .local{
+            margin: 30px;
+    }
+
+    .local img{
+        width: 300px;
+        margin-left: 50px;
     }
 }
 
@@ -275,21 +296,32 @@ footer h2{
     }
 
     article{
-        height: 900px;
+        height: 2200px;
     }
+
+    .card{
+     margin-bottom: 100%;
+     height: 60%;
+    }
+
+    article img{
+        width: 300px;
+        height: 500px;
+    }
+
+    span{
+        display:block;
+    } 
+
+    .card p:hover span {
+        transform: rotate(0);
+        display: block;
+     }
 
     article img{
         width: 350px;
         height: 650px;
     }
-
-    .card{
-        display: flex;
-    }
-
-    span{
-        display: none;
-    } 
 
     .logo{
         margin-left: 3%;
@@ -324,6 +356,10 @@ footer h2{
         height: 770px;
     }
 
+    .local img{
+        margin-left: 0px;
+    }
+
     .local h1{
         padding-top: 60px;
     }
@@ -333,28 +369,35 @@ footer h2{
     .local h1{
         padding-top: 0px;
     }
-
-    footer{
-        display: flex;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.781));
-        color: rgb(223, 223, 223);
-        font-family: "Roboto", sans-serif;
-        height: 500px;
+    .flex{
+        height: 0px;
     }
 
-    .menu a{
-        padding: 2%;
-        font-size: 16px;
+    .card{
+        display: flex;
+        height: 550px;
     }
 
     article img{
-        width: 500px;
-        height: 650px;
+        width: 400px;
+    }
+
+    article{
+        height: 700px;
+    }
+    
+    article img{
+        width: 520px;
+        height: 100%;
     }
 
     .card p {
         height: 100%;
     }
+    
+    span{
+        display:none;
+    } 
 
     .logo{
         margin-left: 5%;
@@ -370,9 +413,48 @@ footer h2{
         flex: 10;
     }     
 
+    .menu a{
+        padding: 2%;
+        font-size: 16px;
+    }
+
+    footer{
+        display: flex;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.781));
+        color: rgb(223, 223, 223);
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        height: 450px;
+    }
+    footer h1{
+    margin: 20px;
+    }
+    .local{
+        margin: 30px;
+    }
+    .contatos a{
+        padding-left: 20px;
+    }
+
+    footer img{
+        width: 300px;
+    }
+
+    .local div{
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 1440px){
+    article{
+        height: 850px;
+    }
+
+    .card{
+        display: flex;
+        height: 650px;
+    }
+
     .card p:hover {
         flex: 4;
       }
@@ -388,6 +470,21 @@ footer h2{
 
     .contato{
         font-size: 20px;
+    }
+
+    footer{
+        display: flex;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.911), rgba(0, 0, 0, 0.781));
+        color: rgb(223, 223, 223);
+        font-family: "Roboto", sans-serif;
+        height: 450px;
+    }
+
+    .contatos a{
+        padding-left: 200px;
+    }
+    .local img{
+        margin-left: 150px;
     }
 }
 
