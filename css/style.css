@@ -8,6 +8,32 @@
     
 }
 
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-icon:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp-icon img {
+    width: 35px;
+    height: 35px;
+}
+
 nav{
     background-color: #4d4d4d;
     padding: 13px;
@@ -487,4 +513,3 @@ footer h2{
         margin-left: 150px;
     }
 }
-
